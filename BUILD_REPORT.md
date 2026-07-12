@@ -1,7 +1,7 @@
 # Build and Validation Report
 
 Date: 2026-07-12  
-Release: 1.1.0
+Release: 1.2.0
 
 ## Build status
 
@@ -18,6 +18,14 @@ Release: 1.1.0
 [Verified] The completed skill was pushed to `BigDoor-ai/Authorized-Security-Auditor-Skill` on the `main` branch after the user explicitly requested publication.
 
 [Verified] No external website, API, database, or infrastructure security test was run while applying the branding changes.
+
+## Documentation and discoverability improvements
+
+[Verified] README logo rendering now uses a direct raw GitHub asset URL with a smaller display width.
+
+[Verified] README now contains a one-prompt installation workflow.
+
+[Verified] `PROMPTS.md` contains copy-paste prompts for installation, plan-only website audits, passive external reviews, complete authorized staging audits, repository reviews, database reviews, remediation, and retesting.
 
 ## Branding implementation
 
@@ -41,6 +49,8 @@ Release: 1.1.0
 - `authorized-security-auditor validate-scope examples/sample-scope.yaml` — valid
 - `authorized-security-auditor validate-finding examples/sample-finding.md` — valid
 - `authorized-security-auditor validate-branding templates/executive-report.md --require-logo` — valid
+- `authorized-security-auditor validate-branding README.md --require-logo` — valid
+- `authorized-security-auditor validate-branding PROMPTS.md --require-logo` — valid
 - Codex user-level installation branding smoke test — passed
 - Claude Code project-level installation branding smoke test — passed
 - Engagement workspace initialization — passed
