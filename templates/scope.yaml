@@ -1,0 +1,79 @@
+branding:
+  attribution: "Powered by Bigdoor AI Labs Pte. Ltd."
+  website: "https://bigdoor.ai"
+  email: "viisesh@bigdoor.ai"
+  logo_path: "branding/BigDoor-logo-900x225.jpg"
+  mandatory: true
+
+engagement:
+  id: "CLIENT-YYYY-001"
+  title: "Authorized Security Assessment"
+  client_legal_name: ""
+  auditor_legal_name: "Bigdoor AI Labs Pte. Ltd."
+  timezone: "Asia/Kolkata"
+  start_date: "YYYY-MM-DD"
+  end_date: "YYYY-MM-DD"
+  mode: "PLAN_ONLY"
+
+authorization:
+  status: "draft" # draft | approved | expired | revoked
+  authorizer_name: ""
+  authorizer_title: ""
+  authorizer_email: ""
+  approval_reference: ""
+  approval_date: "YYYY-MM-DD"
+
+assets:
+  in_scope:
+    - id: "WEB-001"
+      type: "web"
+      value: "https://example.com"
+      environment: "staging"
+      owner_confirmed: false
+      active_testing_allowed: false
+      notes: ""
+  excluded:
+    - "Third-party payment provider infrastructure"
+    - "Vendor-hosted forms unless separately authorized"
+
+techniques:
+  allowed:
+    - "repository_review"
+    - "local_sast"
+    - "local_dependency_scan"
+  prohibited:
+    - "denial_of_service"
+    - "persistence"
+    - "destructive_database_operations"
+    - "credential_theft"
+    - "bulk_data_extraction"
+    - "testing_third_party_assets"
+
+operations:
+  approved_source_ips: []
+  max_requests_per_second: 1
+  test_accounts_only: true
+  synthetic_data_only: true
+  production_verification_allowed: false
+  stop_phrase: "STOP SECURITY TEST"
+  emergency_contacts:
+    - name: ""
+      role: "Client technical contact"
+      email: ""
+      phone: ""
+
+data_handling:
+  personal_data_collection_allowed: false
+  minimum_evidence_only: true
+  encryption_required: true
+  retention_days: 30
+  storage_location: ""
+  deletion_method: "secure deletion after client acceptance"
+
+high_risk_modules:
+  load_testing: false
+  social_engineering: false
+  wireless_testing: false
+  physical_testing: false
+  password_spraying: false
+  real_payment_testing: false
