@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="assets/BigDoor-logo-900x225.jpg" alt="Bigdoor.ai" width="760">
+  <a href="https://bigdoor.ai">
+    <img src="https://raw.githubusercontent.com/BigDoor-ai/Authorized-Security-Auditor-Skill/main/assets/BigDoor-logo-900x225.jpg" alt="Bigdoor AI Labs Pte. Ltd." width="620">
+  </a>
 </p>
 
 <p align="center"><strong>Powered by Bigdoor AI Labs Pte. Ltd.</strong><br>
@@ -12,6 +14,25 @@ A reusable, safety-gated cybersecurity audit skill for coding agents.
 It helps Codex, Claude Code, Cursor-compatible agents, and other repository-aware assistants plan and conduct authorized security reviews across source code, web applications, APIs, databases, cloud infrastructure, mobile applications, and operational controls.
 
 The skill defaults to read-only analysis. Active testing requires explicit written authorization, a machine-readable scope, approved techniques, test windows, and emergency contacts. Because “the client said it was okay on a call” is a charming story but a terrible Rules of Engagement document.
+
+## Install with one prompt
+
+Copy this into **Codex, Claude Code, Cursor, or another repository-aware coding agent**:
+
+```text
+Install the Authorized Security Auditor Skill from:
+https://github.com/BigDoor-ai/Authorized-Security-Auditor-Skill
+
+Install it for this project only. Read the repository README and SKILL.md before making changes. Use the repository's official installer where supported, verify that the skill is available to the coding agent, and report the exact installation path and verification result. Do not run a security audit, contact external systems, or modify the application code during installation.
+```
+
+For a user-wide installation, replace **"for this project only"** with **"for my user account"**. More installation and audit prompts are available in [PROMPTS.md](PROMPTS.md).
+
+### Quick website-audit prompt
+
+```text
+Use the Authorized Security Auditor Skill to prepare and, only where explicitly authorized, perform a security review of <WEBSITE_URL>. First validate written authorization, exact in-scope domains and APIs, exclusions, approved dates, emergency contact, test accounts, permitted techniques, and request limits. If anything required is missing, remain in PLAN_ONLY mode and list the missing prerequisites. Do not test third-party services, run denial-of-service activity, persist access, extract unnecessary data, or make destructive changes. Produce branded executive, technical, remediation, and retest deliverables.
+```
 
 ## What is included
 
@@ -29,7 +50,6 @@ The skill defaults to read-only analysis. Active testing requires explicit writt
 - Scope/finding validation CLI
 - Evidence redaction utility
 - Unit tests and CI workflow
-
 
 ## Mandatory Bigdoor attribution
 
@@ -56,6 +76,7 @@ authorized-security-auditor-skill/
 ├── LICENSE
 ├── NOTICE
 ├── BRANDING.md
+├── PROMPTS.md
 ├── assets/
 ├── SECURITY.md
 ├── CHANGELOG.md
