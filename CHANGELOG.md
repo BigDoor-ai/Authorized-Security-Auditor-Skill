@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 - 2026-07-12
+
+- Improved README logo rendering using a direct raw GitHub image URL and smaller display width
+- Added one-prompt installation instructions
+- Added `PROMPTS.md` with copy-paste installation, website audit, repository review, database review, remediation, and retest prompts
+
 ## 1.1.0 - 2026-07-12
 
 - Added prominent Bigdoor.ai logo and contact details
